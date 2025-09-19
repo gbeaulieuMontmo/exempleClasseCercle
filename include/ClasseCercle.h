@@ -7,7 +7,11 @@ private:
 
 public:
     // Constructeur
+    ClasseCercle();
     ClasseCercle(float r);
+
+    // Destructeur
+    ~ClasseCercle();
 
     // Accesseurs de la classe
     // Accesseur du rayon
@@ -19,16 +23,17 @@ public:
 
     // Mutateurs de la classe
     // Mutateur du rayon
-    void setRayon(float r);
+    void setRayon(float fRayon);
     // Mutateur du centre X
-    void setX(int x);
+    void setX(int iX);
     // Mutateur du centre Y
-    void setY(int y);
+    void setY(int iY);
 
+    // Méthodes de la classe
     // Calcul de l'aire
-    float aire();
+    float calculAire();
     // Calcul du périmètre
-    float perimetre();
+    float calculPerimetre();
     // Calcul du diamètre
-    float diametre();
+    float calculDiametre();
 };
